@@ -5,26 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <h1>Contacts</h1>
-	<button  id="add-contact">Add Contact</button>
-    <form id="new-contact-form">
-		<label for="name">Name</label>
-		<input id="name" name="name" type="text">
-		<label for="email">Email</label>
-		<input id="email" name="email" type="email">
-		<label for="phone">Phone</label>
-		<input id="phone" name="phone" type="text">
-		<label for="company">Company</label>
-		<input id="company" name="company" type="text">
-		<label for="notes">Notes</label>
-		<textarea id="notes" name="notes" type="text"></textarea>
-		<label for="twitter">Twitter</label>
-		<input id="twitter" name="twitter" type="text">
-        <input id="submit" type="submit" value="Save contact">
-	</form>
-    <div id="contact-list"></div>
+    <div class="container">
+        <h1>Contacts</h1>
+	        <button  id="add-contact" class="btn btn-secondary" type="button" >Add Contact</button>
+        <form id="new-contact-form" class="row g-3">
+            <div class="col-md-12">
+		        <label for="name" class="form-label">Name</label>
+		        <input id="name" name="name" type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+		        <input id="email" name="email" type="email" class="form-control">
+            </div>
+            <div class="col-md-6">    
+                <label for="phone" class="form-label">Phone</label>
+		        <input id="phone" name="phone" type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="company" class="form-label">Company</label>
+		        <input id="company" name="company" type="text" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <label for="twitter" class="form-label">Twitter</label>
+		        <input id="twitter" name="twitter" type="text" class="form-control">
+            </div>
+            <div class="col-12">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea id="notes" name="notes" type="text" class="form-control"></textarea>
+		    </div>
+            <div class="col-1">
+                <input id="submit" type="submit" value="Save contact">
+            </div>
+        </form>
+    </div>    
+    <div id="contact-list" class="container"></div>
     <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</div>
 </body>
 </html>

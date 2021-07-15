@@ -1,0 +1,12 @@
+h1 {
+    margin: 20;
+    padding: 20px;
+
+}
+.container {
+    border: 2px;
+    border-style: double;
+    border-color: grey;
+    background-color:darkgray;
+
+}
