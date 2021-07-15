@@ -1,12 +1,19 @@
 h1 {
     margin: 20;
     padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-justify: distribute;
+    font-size: 5rem;
 
 }
 .container {
+    padding: 20px;
     border: 2px;
     border-style: double;
     border-color: grey;
     background-color:darkgray;
+    font-size: large;
+    
 
 }
